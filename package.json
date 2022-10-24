@@ -10,6 +10,7 @@
     "test:ci": "yarn test -- --coverage"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@types/faker": "^6.6.9",
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.4",

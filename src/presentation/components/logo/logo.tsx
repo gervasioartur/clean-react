@@ -1,4 +1,3 @@
-import { join } from 'path'
 import React from 'react'
 
 const Logo: React.FC = () => {

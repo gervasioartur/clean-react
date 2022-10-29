@@ -4,9 +4,9 @@
             "version": "detect"
         }
     },
-    "extends" : [
+    "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended" 
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "project": "./tsconfig.json"

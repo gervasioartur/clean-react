@@ -2,7 +2,7 @@ import { InvalidFieldLengthError } from '@/validation/errors'
 import { faker } from '@faker-js/faker'
 import { MinLengthValidation } from './min-length-validator'
 
-const makeSut = (): MinLengthValidation => new MinLengthValidation(faker.random.word(), 'fieldName', 5)
+const makeSut = (): MinLengthValidation => new MinLengthValidation('fieldName', 5)
 describe('MinLengthValidator', () => {
   it('should return error if value is invalid', () => {
     const sut = makeSut()

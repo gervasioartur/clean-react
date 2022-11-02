@@ -2,7 +2,9 @@
   "name": "clean-react",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "description": "React project using TDD, Clean arch and Typescript",
+  "author": "Gervasio Artur Dombo gervasioartur@outlook.com.br",
+  "license": "GNU GPL3",
   "scripts": {
     "start": "webpack-dev-server --open",
     "lint": "eslint .",

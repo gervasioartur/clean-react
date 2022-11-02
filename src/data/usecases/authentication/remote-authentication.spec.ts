@@ -1,9 +1,9 @@
 import { HttpStatusCode } from '@/data/protocols/http'
 import { HttpPostClientSpy } from '@/data/test'
 import { InvalidCredentialsError, UnexpectedError } from '@/domain/errors'
-import { AccountModel } from '@/domain/models/account-model'
+import { AccountModel } from '@/domain/models'
 import { mockAccountModel, mockAuthentication } from '@/domain/test'
-import { AuthenticationParams } from '@/domain/usecases'
+import { AuthenticationParams } from '@/domain/useCases'
 import { faker } from '@faker-js/faker'
 
 import { RemoteAuthentication } from './remote-authentication'

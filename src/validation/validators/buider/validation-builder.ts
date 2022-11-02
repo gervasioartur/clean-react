@@ -1,6 +1,5 @@
 import { FieldValidation } from '@/validation/protocols'
-import { RequiredFieldValidation } from '@/validation/validators/required-field/required-field-validation'
-import { EmailValidation } from '@/validation/validators'
+import { RequiredFieldValidation, EmailValidation, MinLengthValidation } from '@/validation/validators'
 
 export class ValidationBuilder {
   private constructor (
@@ -23,9 +22,12 @@ export class ValidationBuilder {
     return this
   }
 
-    ó
+  min (length: number): ValidationBuilder {
+    this.validations.push(new MinLengthValidation(this.fieldName, 5))
+    return this
+  }
 
-    build (): FieldValidation[] {
-      return this.validations
-    }
+  build (): FieldValidation[] {
+    return this.validations
+  }
 }

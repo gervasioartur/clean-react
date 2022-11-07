@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-import { Authentication, SaveAccessToken } from '@/domain/useCases'
+import { Authentication, SaveAccessToken } from '@/domain/usecases'
 import { Footer, FormStatus, Header, Input } from '@/presentation/components/'
 import Context from '@/presentation/context/form-context'
 import { Validation } from '@/presentation/protocols/validation'
